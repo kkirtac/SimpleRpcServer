@@ -1,6 +1,6 @@
-SimpleProducerConsumer
+SimpleRpcServer
 ==================
-SimpleProducerConsumer is a multi-threaded C++ messaging example which is based on [RabbitMQ](https://www.rabbitmq.com/) project. It combines an [RPC application](https://www.rabbitmq.com/tutorials/tutorial-six-python.html) with [work queues (threads)](https://www.rabbitmq.com/tutorials/tutorial-two-python.html). The application builds a consumer queue with multiple channels (single channel for each distinct thread), consumes the queue with multiple threads and sends a single response with each thread. This project heavily depends on [SimpleAmqpClient](https://github.com/alanxz/SimpleAmqpClient).
+SimpleRpcServer is a multi-threaded C++ messaging example which is based on [RabbitMQ](https://www.rabbitmq.com/) project. It combines an [RPC application](https://www.rabbitmq.com/tutorials/tutorial-six-python.html) with [work queues (threads)](https://www.rabbitmq.com/tutorials/tutorial-two-python.html). The application builds a consumer queue with multiple channels, consumes the queue with multiple threads (single channel for each thread) and sends a response with each thread. This project heavily depends on [SimpleAmqpClient](https://github.com/alanxz/SimpleAmqpClient).
 
 Installing
 ----------------
